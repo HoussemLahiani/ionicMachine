@@ -1,0 +1,33 @@
+<ion-content>
+  <br>
+  <p>
+    
+    <ion-icon  name="chevron-back-outline" style="font-size: 20px; margin-left: 10px;" (click)="backpage()"></ion-icon>
+    <img src="assets/Clina Logo.png" style="width: 50px;height: 50px; margin-left: 75%;">
+  </p>
+  
+    <p style="text-align: center;">
+    <ion-toolbar>
+      <ion-title> <strong> Hauptmaschine 5</strong></ion-title>
+    </ion-toolbar>
+  </p>
+  <div>
+  <ion-list>
+    <ion-item (click)="nextpage1()">
+      <ion-icon name="calendar-clear-outline" style="margin-right: 8px;"></ion-icon>
+      Tägliche Wartung HP5 
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item (click)="nextpage2()">
+      <ion-icon name="calendar-clear-outline" style="margin-right: 8px;"></ion-icon>
+      Wöchentliche Wartung HP5
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item (click)="nextpage3()">
+      <ion-icon name="calendar-clear-outline" style="margin-right: 8px;"></ion-icon>
+      Monatliche Wartung HP5
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+  </div>
+</ion-content>

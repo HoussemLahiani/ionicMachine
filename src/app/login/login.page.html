@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login-Clina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <p class="pos" >
+    <img src="assets/Clina Logo.png"> </p>
+  <div class="body">
+  <p class="pos">
+   <ion-item>
+  <ion-input [(ngModel)]="user.email" placeholder="Benutzername"></ion-input>
+   </ion-item>
+   <br>
+   <ion-item>
+  <ion-input [(ngModel)]="user.password" placeholder="Passwort" type="password"></ion-input>
+   </ion-item>
+   <br>
+  <ion-button expand="block" (click)="logMeIn()">Anmelden</ion-button>
+  <ion-button color='secondary'expand="block" (click)="register()">Register</ion-button>
+ 
+  </p>
+</div>
+</ion-content>

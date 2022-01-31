@@ -1,0 +1,71 @@
+<ion-content>
+  <br>
+  <div  id="print-wrapper">
+  <p>
+
+    <ion-icon name="chevron-back-outline" style="font-size: 20px; margin-left: 10px;" (click)="backpage()"></ion-icon>
+    <img src="assets/Clina Logo.png" style="width: 120px;height: 70px; margin-left: 55%;">
+  </p>
+
+  <p  style="text-align: center;">
+    <ion-toolbar>
+      <ion-title> <strong> Tägliche Wartung</strong></ion-title>
+    </ion-toolbar>
+  </p>
+  <div >
+    <ion-item>
+      <ion-label position="stacked">Mitarbeiter :</ion-label>
+      <ion-input [(ngModel)]="Mitarbeiter" placeholder="Vorname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Datum :</ion-label>
+      <ion-input [(ngModel)]="Datum" type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Teppich : </ion-label>
+      <ion-select [(ngModel)]="Teppich" interface="popover">
+        <ion-select-option value="Kontrolliert">Kontrolliert</ion-select-option>
+        <ion-select-option value="Gewechselt">Gewechselt</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kühlmittel :</ion-label>
+      <ion-select [(ngModel)]="Kuhlmittel" interface="popover">
+        <ion-select-option value="kontrolliert">kontrolliert</ion-select-option>
+        <ion-select-option value="Ausgefühlt">Ausgefühlt</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Mustermatte kontrolliert</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Maschinen-Einstellungen kontrolliert</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Maschine gereinigt</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Farbe der Kappillarrollen im <br>
+        Rollenregal wurde überprüft</ion-label>
+    </ion-item>
+
+   </div>
+    <div>
+      <p style="text-align: center;">
+      <ion-button (click)="pdfSend()" shape="round" class="envBut" color="#DC58BF">
+        <span style="text-transform: none !important;" class="continuer" class="env">Senden
+        </span>
+       </ion-button>
+       <ion-button (click)="pdfDownload()" shape="round" class="envBut" color="secondary">
+        <span style="text-transform: none !important;" class="continuer" class="env">Als Pdf umwandlen
+        </span>
+      </ion-button>
+
+     </p>
+  </div>
+</div>
+</ion-content>

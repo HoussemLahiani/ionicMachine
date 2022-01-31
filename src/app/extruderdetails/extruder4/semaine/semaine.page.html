@@ -1,0 +1,40 @@
+<ion-content>
+  <br>
+  <p>
+    
+    <ion-icon  name="chevron-back-outline" style="font-size: 20px; margin-left: 10px;" (click)="backpage()"></ion-icon>
+    <img src="assets/Clina Logo.png" style="width: 50px;height: 50px; margin-left: 75%;">
+  </p>
+  
+    <p style="text-align: center;">
+    <ion-toolbar>
+      <ion-title> <strong> Wöchentliche Wartung 
+      </strong></ion-title>
+    </ion-toolbar>
+  </p>
+  <div>
+    <ion-item>
+      <ion-label position="stacked">Mitarbeiter :</ion-label>
+      <ion-input placeholder="Vorname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Datum :</ion-label>
+      <ion-input  type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label >Wasser Filter :</ion-label>
+      <ion-select interface="popover">
+      <ion-select-option value="1">Geprüft</ion-select-option>
+      <ion-select-option value="2">Gewechselt</ion-select-option>
+    </ion-select>
+    </ion-item>
+  </div>
+  <div>
+    <p style="text-align: center;">
+      <ion-button shape="round" class="envBut" color="#DC58BF">
+        <span style="text-transform: none !important;" class="continuer" class="env">Senden
+        </span> 
+      </ion-button>
+    </p>
+  </div>
+</ion-content>
